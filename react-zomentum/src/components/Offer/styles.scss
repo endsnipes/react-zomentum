@@ -1,0 +1,89 @@
+.offer {
+  background-color: rgba(0, 255, 133, 0.08);
+  padding: 100px 0;
+  text-align: center;
+  height: auto;
+
+  &__container {
+    background: url("../../assets/rectanglezomentum.png") bottom left no-repeat,
+      url("../../assets/rectanglezomentum.png") top right no-repeat;
+    @media (max-width: 768px) {
+      background: url("../../assets/rectanglezomentum.png") bottom left
+          no-repeat,
+        url("../../assets/rectanglezomentum.png") top 10% right no-repeat;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    margin-bottom: 103px;
+    font-family: Helvetica;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  &__container-inner {
+    max-width: 824px;
+    min-height: 127px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    @media (max-width: 1141px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+
+    @media (max-width: 568px) {
+      flex-direction: column;
+    }
+  }
+
+  &__card-text {
+    margin-top: 124px;
+    font-size: 17px;
+    line-height: 27px;
+    color: #000c2d;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    width: 253px;
+
+    @media (max-width: 768px) {
+      margin-right: 20px;
+    }
+  }
+
+  &__card--img1 {
+    background-image: url("../../assets/airpods.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &__card--search {
+    background-image: url("../../assets/find.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &__card--histogram {
+    background-image: url("../../assets/grow.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    margin-top: 67px;
+  }
+}
